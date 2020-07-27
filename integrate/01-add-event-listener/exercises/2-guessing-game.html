@@ -25,14 +25,14 @@
     const setSecretHandler = () => {
       debugger;
 
-      const newSecret = prompt('_');
-      if (newSecret === null) {
+      const newSecret = prompt('enter a new secret');
+      if (newSecret === null || newSecret === '') {
         return;
       }
 
       secret = newSecret;
 
-      alert('_');
+      alert('your secret is safe with me ;)');
     }
 
     const guessSecretHandler = () => {
