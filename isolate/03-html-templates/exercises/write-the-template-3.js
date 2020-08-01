@@ -8,12 +8,12 @@
  */
 const renderEvens = (numbers, id) => {
   let listItems = '';
-  for (const _ of _) {
-    if (_) {
-      listItems += _;
+  for (const value of numbers) {
+    if (value % 2 === 0) {
+      listItems += `<li>${value}</li>`;
     }
   }
-  const list = `<ul id="${_}">${_}</ul>`;
+  const list = `<ul id="${id}">${listItems}</ul>`;
   return list;
 };
 

@@ -8,10 +8,7 @@
  */
 const renderSummaryDetails = (caption, mainText) => {
   return (
-    `<details>\n` +
-    `  _\n` +
-    `  _\n` +
-    `</details>`
+    `<details>\n  <summary>${caption}</summary>\n  <p>${mainText}</p>\n</details>`
   );
 };
 
