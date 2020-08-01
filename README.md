@@ -107,7 +107,11 @@ Just like in the previous module, you will be expected to explain your developme
 
 ### Git Branching
 
-In this module we will be expected to build your projects using branches.  If you are looking to challenge yourself try making branches on your branches!  Instead of simply building each user story as a series of commits on one branch, try making one branch for each user story (like before) but then develop each file in your user story on _another_ branch, merging back into your story branch when the file is done.  And merging your story branch back to master when the story is finished.
+In this module’s project you have many more files and folders, and you’re learning how to break a single feature into more smaller pieces.  To implement a single user story you will need HTML, CSS, event listener(s), handler(s) and possibly a logic function. All of these smaller tasks can be shared between different team mates.
+
+The extra branching challenge this module is to create different branches for each user story like before, but then to also create branches off of the user story branches for the smaller units of work.  This way your group can confirm your work before merging it into the feature, and confirm the feature before merging it to master
+
+So it’s not about how many commits are on a branch, but how much work is on a branch.  If you only commit once for your piece of work then there will be only commit on a branch, but that’s the measure
 
 Good luck!
 
@@ -122,17 +126,21 @@ Good luck!
   - [Jon Bellah](https://jonbellah.com/articles/separation-of-concerns/)
   - [stackexchange](https://softwareengineering.stackexchange.com/questions/32581/how-do-you-explain-separation-of-concerns-to-others
 )
+- [Generating HTML with Template Literals](https://wesbos.com/template-strings-html)
+- The DOM
+  - [javascript.info/document](https://javascript.info/document)
+  - [super highly recommended DOM tutorial](https://dom-tutorials.appspot.com/static/index.html)
+  - [Zac Gordon](https://www.youtube.com/watch?v=l-0nPnSvbX8&list=PLruo2gSoqlej-QjRW25c97socsRiAUVuf&index=8)
+  - [Traversy](https://www.youtube.com/watch?v=0ik6X4DJKCc)
+  - [study.hackyourfuture.be](https://study.hackyourfuture.be/javascript/dom-manipulation)
 - Events
   - [what are events?](https://www.youtube.com/watch?v=gx0oAgvXyE4) (mmtuts)
   - [`onclick` vs. `.addEventListener('click', handler)`](https://www.youtube.com/watch?v=7UstS0hsHgI)
   - [javascript.info/events](https://javascript.info/events)
   - [javascript.inf/event-details](https://javascript.info/event-details)
   - [MDN Building Blocks](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
-- [Generating HTML with Template Literals](https://wesbos.com/template-strings-html)
-- DOM Manipulation
-  - [javascript.info/document](https://javascript.info/document)
-  - [super highly recommended DOM tutorial](https://dom-tutorials.appspot.com/static/index.html)
-  - [study.hackyourfuture.be](https://study.hackyourfuture.be/javascript/dom-manipulation)
+  - [Event Delegation (mosh)](https://programmingwithmosh.com/javascript/javascript-event-bubbling-and-event-delegation/)
+  - [Bubble & Capture (dev.to)](https://dev.to/shimphillip/handing-javascript-events-efficiently-with-bubble-and-capture-4ha5)
 - Code to Study
   - [bradtraversy/vanillawebprojects](https://github.com/bradtraversy/vanillawebprojects)
   - [wesbos/JavaScript30](https://github.com/wesbos/JavaScript30)
@@ -159,7 +167,7 @@ Exercises for solo-study.  We won't be checking these exercises unless you ask u
 
 ### The DOM
 
-- :edd: [dom-manipulation](https://github.com/HackYourFutureBelgium/dom-manipulation)
+- :egg: [dom-manipulation](https://github.com/HackYourFutureBelgium/dom-manipulation)
 
 ### JavaScript 30
 
@@ -176,16 +184,14 @@ The focus of week 1 is using _event listeners_, _event handlers_ and _DOM elemen
 
 ### Prep Work
 
-#### Readings
-
-- [javascript.info/document](https://javascript.info/document)
-- [javascript.info/events](https://javascript.info/events)
-- [`onclick` vs. `.addEventListener('click', handler)`](https://www.youtube.com/watch?v=7UstS0hsHgI)
-
-#### Practice
-
-- [isolate/01-dom-elements](../isolate/01-dom-elements)
-- [integrate/01-add-event-listener](../integrate/01-add-event-listener)
+- Study
+  - [javascript.info/document](https://javascript.info/document)
+  - [javascript.info/events](https://javascript.info/events)
+  - [`onclick` vs. `.addEventListener('click', handler)`](https://www.youtube.com/watch?v=7UstS0hsHgI)
+  - [What are event listeners in JS?](https://www.youtube.com/watch?v=jqU3uaRgQyQ)
+- Practice
+  - [isolate/01-dom-elements](../isolate/01-dom-elements)
+  - [integrate/01-add-event-listener](../integrate/01-add-event-listener)
 
 ### Isolate
 
@@ -201,7 +207,7 @@ The focus of week 1 is using _event listeners_, _event handlers_ and _DOM elemen
 
 There's an outstanding series of tutorials called [The JavaScript 30](https://javascript30.com/) put together by [Wes Bos](https://wesbos.com), it's 30 fun frontend projects with video tutorials and finished code to study.  The team project this week is to study one of the projects and reconstruct it as a collaborative project.
 
-Each team member should fork [HackYourFutureBelgium/javascript-30](https://github.com/HackYourFutureBelgium/JavaScript-30), this repo contains more detailed instructions for the week's project.
+Each team member should fork [HackYourFutureBelgium/javascript-30](https://github.com/HackYourFutureBelgium/JavaScript-30), this repo contains more detailed instructions for the week's project.  You can use the [javascript-30-starter](https://github.com/HackYourFutureBelgium/javascript-30-starter) repo to get off the ground.
 
 No need to stop at 1 project! If your team is on a roll, keep going.  There's a lot of projects :)
 
@@ -214,7 +220,7 @@ No need to stop at 1 project! If your team is on a roll, keep going.  There's a 
 - [ ] [One branch per step in `development-strategy.md`](https://github.com/_/_/network)
 - [ ] [One closed issue per task](https://github.com/_/_/issues?q=is%3Aissue+is%3Aclosed) (you can have more than task per development step!)
 - [ ] [One closed PR per task issue](https://github.com/_/__/pulls?q=is%3Apr+is%3Aclosed)
-- [ ] [A project board](https://github.com/_/_/projects/X) with all issues moved to "Done"
+- [ ] [A project board](https://github.com/_/_/projects/X)
 ```
 
 [TOP](#separation-of-concerns)
@@ -227,11 +233,44 @@ The focus of week 2 is using forms to handle more gather and process more user d
 
 ### Prep Work
 
-### Isolate
+- Study
+  - [js.info: Bubbling & Capturing](https://javascript.info/bubbling-and-capturing) (`event.target`)
+  - [js.info: Event Delegation](https://javascript.info/event-delegation)
+  - [Gordon: DOM Events](https://www.youtube.com/watch?v=QE1YQnhntgw)
+  - [Griffith: JS Event Listeners](https://www.youtube.com/watch?v=EaRrmOtPYTM)
+  - [Event Delegation (mosh)](https://programmingwithmosh.com/javascript/javascript-event-bubbling-and-event-delegation/)
+- [Isolate](../isolate/index.html)
+  - HTML Templates
+  - Element Children
+  - DOM Manipulation
+  - Event Parameter
+- [Integrate](../integrate/index.html)
+  - Read & Write DOM
 
-### Integrate
+### [Isolate](../isolate/index.html)
+
+- Event Parameter
+
+### [Integrate](../integrate/index.html)
+
+- Event Delegation
 
 ### Project
+
+Just like last week, choose a JavaScript 30 project to reverse-engineer as a team.
+
+#### Checklist
+
+```md
+- [ ] [repo](https://github.com/_/_) with a complete README
+- [ ] [live demo](https://_.github.io/_)
+- [ ] [development-strategy](https://github.com/_/_/tree/master/development-strategy.md)
+- [ ] [One branch per step in `development-strategy.md`](https://github.com/_/_/network)
+- [ ] [One closed issue per task](https://github.com/_/_/issues?q=is%3Aissue+is%3Aclosed) (you can have more than task per development step!)
+- [ ] [One closed PR per task issue](https://github.com/_/__/pulls?q=is%3Apr+is%3Aclosed)
+- [ ] [A project board](https://github.com/_/_/projects/X)
+```
+
 
 [TOP](#separation-of-concerns)
 
