@@ -9,15 +9,20 @@ ulEl.innerHTML = `
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
+const expectedInnerHTMLs = ['toad', 'frog', 'salamander'];
+const modifyChildren = (array) => {
 
+  const convertArray = Array.from(ulEl.children);
 
+  convertArray.map((element, index) => element.innerHTML = array[index]);
+}
 
-
+modifyChildren(expectedInnerHTMLs);
 // --- --- --- --- --- ---
 
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
-const expectedInnerHTMLs = ['toad', 'frog', 'salamander'];
+
 for (let i = 0; i < expectedInnerHTMLs.length; i++) {
   const actual = ulEl.children[i].innerHTML;
   const expected = expectedInnerHTMLs[i];
