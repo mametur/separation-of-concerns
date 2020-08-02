@@ -11,7 +11,10 @@ console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
 
-
+const pText = ulEl.children[1].innerHTML;
+ulEl.replaceChild(ulEl.children[3], ulEl.children[1]);
+ulEl.children[1].innerHTML = pText;
+ulEl.removeChild(ulEl.lastChild);
 
 
 
