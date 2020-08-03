@@ -193,12 +193,14 @@ The focus of week 1 is using _event listeners_, _event handlers_ and _DOM elemen
   - [isolate/01-dom-elements](../isolate/01-dom-elements)
   - [integrate/01-add-event-listener](../integrate/01-add-event-listener)
 
-### Isolate
+### Lesson Plan
+
+#### Isolate
 
 - [isolate/01-dom-elements](../isolate/01-dom-elements)
 - [isolate/02-read-write-dom](../isolate/02-read-write-dom)
 
-### Integrate
+#### Integrate
 
 - [integrate/01-add-event-listener](../integrate/01-add-event-listener)
 - [integrate/02-read-write-dom](../integrate/02-read-write-dom)
@@ -239,19 +241,22 @@ The focus of week 2 is using forms to handle more gather and process more user d
   - [Gordon: DOM Events](https://www.youtube.com/watch?v=QE1YQnhntgw)
   - [Griffith: JS Event Listeners](https://www.youtube.com/watch?v=EaRrmOtPYTM)
   - [Event Delegation (mosh)](https://programmingwithmosh.com/javascript/javascript-event-bubbling-and-event-delegation/)
-- [Isolate](../isolate/index.html)
+  - [Event Delegation (all things JS)](https://www.youtube.com/watch?v=6NMSCh3DJug)
+  - [Event Delegation (dcode)](https://www.youtube.com/watch?v=pKzf80F3O0U)
+- [Isolate](./isolate/index.html)
   - HTML Templates
   - Element Children
   - DOM Manipulation
-  - Event Parameter
 - [Integrate](../integrate/index.html)
   - Read & Write DOM
 
-### [Isolate](../isolate/index.html)
+### Lesson Plan
+
+#### [Isolate](../isolate/index.html)
 
 - Event Parameter
 
-### [Integrate](../integrate/index.html)
+#### [Integrate](../integrate/index.html)
 
 - Event Delegation
 
