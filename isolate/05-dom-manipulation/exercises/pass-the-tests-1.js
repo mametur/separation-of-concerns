@@ -2,11 +2,11 @@
 
 const divEl = document.createElement('ul');
 divEl.innerHTML = `
-  <p></p> // replace
-  <section></section> // insert before
-  <h1><h1> // remove
+  <p></p>
+  <section></section>
+  <h1><h1>
 `;
-console.log(divEl.nodeName, divEl.cloneNode(true));
+console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
 const navEl = document.createElement('nav');
@@ -21,7 +21,7 @@ divEl.appendChild(cloneP);
 
 // --- --- --- --- --- ---
 
-console.log(divEl.nodeName, divEl.cloneNode(true));
+console.log(divEl.nodeName + ' (after)', divEl.cloneNode(true));
 
 console.assert(divEl.childElementCount === 4,
   'Test: .childElementCount');

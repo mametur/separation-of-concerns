@@ -11,7 +11,7 @@ divEl.innerHTML = `
     </tbody>
   </table>
 `;
-console.log(divEl.nodeName, divEl.cloneNode(true));
+console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
 const expectedInnerHTMLs = ['a', 'b', 'c', 'd'];
@@ -47,7 +47,7 @@ for (let element of tbodyElement) {
 
 // --- --- --- --- --- ---
 
-console.log(divEl.nodeName, divEl.cloneNode(true));
+console.log(divEl.nodeName + ' (after)', divEl.cloneNode(true));
 
 
 for (let i = 0; i < 2; i++) {
