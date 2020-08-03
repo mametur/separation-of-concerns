@@ -9,26 +9,25 @@
     'use strict';
 
     const toggleFAQsHandler = (event) => {
-      debugger;
+      //debugger;
 
-      const target = _;
-      if (target._ !== 'SUMMARY') {
+      const target = event.target;
+      if (target.nodeName !== 'SUMMARY') {
         return;
       }
 
-      const sectionEl = event._;
-      const sectionChildren = _;
+      const sectionEl = event.currentTarget;
+      const sectionChildren = sectionEl.children;
 
-      for (const details of sectionChildren) {
+      for (let details of sectionChildren) {
 
-        const summary = details.children[_];
-        const wasNotClicked = summary !== _;
+        if (details.firstElementChild.id === event.target.id) {
 
-        const isOpen = details.open === _;
+          console.log(details.open);
+          continue;
 
-        if (wasNotClicked && isOpen) {
-          details.open = _;
         }
+        details.open = false;
       }
     };
   </script>
